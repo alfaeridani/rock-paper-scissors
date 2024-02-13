@@ -10,11 +10,33 @@
         function getComputerChoice() {
             const choices = ["Rock", "Paper", "Scissors"];
             const random = Math.floor(Math.random() * choices.length);
-            return random;
+            return choices[random];
         }
         
         function singleGame(playerSelection, computerSelection) {
-
+            if ((playerSelection = "Rock") && (computerSelection = "Paper")) {
+                console.log("You lose! Paper beats rock.")
+                return computerScore++;
+            } else if ((playerSelection = "Rock") && (computerSelection = "Scissors")) {
+                console.log("You win! Rock beats scissors.")
+                return playerScore++;
+            } else if ((playerSelection = "Paper") && (computerSelection = "Rock")) {
+                console.log("You win! Paper beats rock.")
+                return playerScore++;
+            } else if ((playerSelection = "Paper") && (computerSelection = "Scissors")) {
+                console.log("You lose! Scissors beats paper.")
+                return computerScore++;
+            } else if ((playerSelection = "Scissors") && (computerSelection = "Rock")) {
+                console.log("You lose! Rock beats scissors.")
+                return computerScore++;
+            } else if ((playerSelection = "Scissors") && (computerSelection = "Paper")) {
+                console.log("You win! Scissors beats paper.")
+                return playerScore++;
+            } else if (playerSelection = computerSelection) {
+                console.log("Tie!")
+            } else {
+                console.log("Input invalid.")
+            }
         }
 
         function playGame() {
