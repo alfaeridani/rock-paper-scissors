@@ -8,48 +8,39 @@
 </head>
 <body>
     <h1 class="title">Rock, Paper, Scissors</h1>
-    <p class="description">Play five rounds of the game now!</p>
-    <button id="newGame">Play new game!</button>
-    <div id="playerChoiceButtons">
-        <div>
-            <button id="rock">Rock</button>
+    <div class="content">
+        <p class="description">Reach five points first to win the game!</p>
+        <button id="newGame">New Game</button>
+        <div id="playerChoiceButtons">
+            <div>
+                <button id="rock">Rock</button>
+            </div>
+            <div>
+                <button id="paper">Paper</button>
+            </div>
+            <div>
+                <button id="scissors">Scissors</button>
+            </div>
         </div>
-        <div>
-            <button id="paper">Paper</button>
+        <div id="icons">
+            <div id="playerContainer">
+                <p>You</p>
+                <img id="playerIcon">
+            </div>
+            <div id="computerContainer">
+                <p>Computer</p>
+                <img id="computerIcon">
+            </div>
         </div>
-        <div>
-            <button id="scissors">Scissors</button>
-        </div>
+        <h1 id="currentScore"></h1>
+        <h1 id="finalResult"></h1>
     </div>
-    <div class="roundsContainer">
-        <div class="singleRoundContainer">
-            <h2>Round 1:</h2>
-            <p id="singleGameResult0"></p>
-            <p id="currentScore0"></p>
+    <footer>
+        <div id="footerText">
+            <p>Webpage designed by Alfa Eridani, 2024</p>
+            <p>Icons by <a href="https://www.freepik.com/author/vitaly-gorbachev/icons?t=f">Vitaly Gorbachev</a></p>
         </div>
-        <div class="singleRoundContainer">
-            <h2>Round 2:</h2>
-            <p id="singleGameResult1"></p>
-            <p id="currentScore1"></p>
-        </div>
-        <div class="singleRoundContainer">
-            <h2>Round 3:</h2>
-            <p id="singleGameResult2"></p>
-            <p id="currentScore2"></p>
-        </div>
-        <div class="singleRoundContainer">
-            <h2>Round 4:</h2>
-            <p id="singleGameResult3"></p>
-            <p id="currentScore3"></p>
-        </div>
-        <div class="singleRoundContainer">
-            <h2>Round 5:</h2>
-            <p id="singleGameResult4"></p>
-            <p id="currentScore4"></p>
-        </div>
-    </div>
-    <h1 id="finalGameResult"></p>
-
+    </footer>
     <script src="./rockpaperscissors.js"></script>
 </body>
 </html>
